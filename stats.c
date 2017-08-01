@@ -36,6 +36,8 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   print_array(&test);
+  printf("Maximal value of data = %d \n",find_maximum(&test));
+  printf("Minimal value of data = %d \n",find_minimum(&test));
 
 }
 
@@ -60,14 +62,26 @@ int find_mean (void){
 return 0;
 }
 
-int find_maximum (void){
+int find_maximum (unsigned char *arr){
+unsigned int i=0U;
+unsigned char max=0U;
+max=*arr;
+ for(i=0;i<SIZE;i++){
+  if(max<=*(arr+i))max=*(arr+i);
+ }
 
-return 0;
+return max;
 }
 
-int find_minimum (void){
+int find_minimum (unsigned char *arr){
+unsigned int i=0U;
+unsigned char min=0U;
+min=*arr;
+ for(i=0;i<SIZE;i++){
+  if(min>=*(arr+i))min=*(arr+i);
+ }
 
-return 0;
+return min;
 }
 
 void sort_array(void){

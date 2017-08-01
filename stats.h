@@ -52,24 +52,24 @@ int find_mean(void);
 
 /**
 * @brief Function searches maximum value in data set.
-* @param 
-* @return
+* @param *arr pointer to array
+* @return max maximal value from data array
 */
-int find_maximum(void);
+int find_maximum(unsigned char *arr);
 
 /**
 * @brief Function searches minimum value in data set.
-* @param
-* @return
+* @param *arr pointer to array
+* @return min minimal value from data array
 */
-int find_minimum(void);
+int find_minimum(unsigned char *arr);
 
 /**
 * @brief Function sorts data from minimal to maximal value.
 * @param
 * @return
 */
-void sort_aarray(void);
+void sort_array(void);
 
 
 #endif /* __STATS_H__ */

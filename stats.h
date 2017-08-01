@@ -34,11 +34,11 @@ void print_statistics (void);
 * @param
 * @return
 */
-void print_array(void);
+void print_array(unsigned char *arr);
 
 /**
 * @brief Function calculates median value of data set.
-* @param
+* @param *arr pointer to array
 * @return
 */
 int find_median (void);

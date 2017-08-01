@@ -45,10 +45,10 @@ int find_median (void);
 
 /**
 * @brief Function calculates mean value of data set .
-* @param 
-* @return
+* @param *arr pointer to array
+* @return mean mean value from data array
 */
-int find_mean(void);
+char find_mean(unsigned char *arr);
 
 /**
 * @brief Function searches maximum value in data set.

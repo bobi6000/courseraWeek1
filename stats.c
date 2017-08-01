@@ -38,7 +38,7 @@ void main() {
   print_array(&test);
   printf("Maximal value of data = %d \n",find_maximum(&test));
   printf("Minimal value of data = %d \n",find_minimum(&test));
-
+  printf("Mean value of data = %d \n",find_mean(&test));
 }
 
 void print_statistics (void){
@@ -57,9 +57,16 @@ int find_median (void){
 return 0;
 }
 
-int find_mean (void){
+char find_mean (unsigned char *arr){
 
-return 0;
+unsigned int i=0U;
+unsigned int mean=0U;
+
+ for(i=0;i<SIZE;i++)
+  	mean+=*(arr+i);
+ 
+mean/=SIZE;
+return (char)mean;
 }
 
 int find_maximum (unsigned char *arr){

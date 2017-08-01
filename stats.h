@@ -9,32 +9,67 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Header file with  declarations of functions from stats.c
  *
- * <Add Extended Description Here>
+ * File includes declarations and documentation functions and variables.  
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author pawel stanak
+ * @date 01.08.2017
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+* @brief Function prints the statistics of data array e.g. minimum, maximum, mean and median value.
+* @param
+* @return
+*
+*/
+void print_statistics (void);
 
 /**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
- */
+* @brief Function prints data array.
+* @param
+* @return
+*/
+void print_array(void);
+
+/**
+* @brief Function calculates median value of data set.
+* @param
+* @return
+*/
+int find_median (void);
+
+/**
+* @brief Function calculates mean value of data set .
+* @param 
+* @return
+*/
+int find_mean(void);
+
+/**
+* @brief Function searches maximum value in data set.
+* @param 
+* @return
+*/
+int find_maximum(void);
+
+/**
+* @brief Function searches minimum value in data set.
+* @param
+* @return
+*/
+int find_minimum(void);
+
+/**
+* @brief Function sorts data from minimal to maximal value.
+* @param
+* @return
+*/
+void sort_aarray(void);
 
 
 #endif /* __STATS_H__ */

@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief File includes functions for  analyze data.
  *
- * <Add Extended Description Here>
+ * In fils There are eight functions to analyze data set in array.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author pawel staniak
+ * @date 01.08.2017
  *
  */
 
@@ -40,4 +40,32 @@ void main() {
 
 }
 
-/* Add other Implementation File Code Here */
+void print_statistics (void){
+
+}
+
+void print_array (void){
+}
+
+int find_median (void){
+
+return 0;
+}
+
+int find_mean (void){
+
+return 0;
+}
+
+int find_maximum (void){
+
+return 0;
+}
+
+int find_minimum (void){
+
+return 0;
+}
+
+void sort_array(void){
+}
